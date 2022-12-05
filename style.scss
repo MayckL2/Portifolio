@@ -10,7 +10,7 @@ html{
 body{
     background-color: purple;
     color: white;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 img{
     width: 70px;
@@ -59,14 +59,13 @@ header{
 
 // ============= main ===============
 section{
-    width: 95vw;
-    margin: 0px !important;
+    width: 96vw;
     height: 100vh;
     border-bottom: solid white;
-    scroll-margin-top: 45px;
+    scroll-margin-top: 45px !important;
     background-attachment: fixed;
     padding: 2vw;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 section:nth-of-type(1){
@@ -167,7 +166,7 @@ section:nth-of-type(3){
             margin: 20px;
             
             img{
-                width: 100;
+                width: 80px;
                 height: 80px;
                 // object-fit: contain;
             }
@@ -224,7 +223,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 99vw;
+    width: 100vw;
     overflow: hidden;
 
     h1{
@@ -237,9 +236,11 @@ footer{
         padding: 20px;
     }
     div{
+        display: flex;
+        flex-wrap: wrap;
         padding: 50px 0px 50px 0px;
         a{
-            margin: 50px;
+            margin: 10px;
             img{
                 object-fit: contain;
             }
@@ -275,7 +276,7 @@ footer{
             width: 100vw;
             position: absolute;
             top: 70px;
-            right: -100vw;
+            right: -110vw;
             transition: all 0.5s;
             
             li{
@@ -295,12 +296,21 @@ footer{
     }
     section:nth-of-type(2){
         flex-direction: column;
+        height: auto;
 
         .sou{
+            opacity: 1;
             width: 90vw;
+            height: auto;
         }
         .sou2, a{
             position: static;
+        }
+        .sou2{
+            opacity: 1;
+            margin-top: 20px;
+            width: 90vw;
+            height: auto;
         }
         a{
             width: 70px;
@@ -311,6 +321,15 @@ footer{
         height: auto;
 
         div{
+            width: 80vw;
+            a{
+                margin: 10px;
+
+                img{
+                    width: 70px;
+                    height: 60px;
+                }
+            }
             p{
                 display: none;
             }

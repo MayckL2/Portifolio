@@ -11,7 +11,6 @@ html {
 body {
   background-color: purple;
   color: white;
-  overflow-x: hidden;
 }
 
 img {
@@ -65,14 +64,12 @@ header ul li a:hover {
 }
 
 section {
-  width: 95vw;
-  margin: 0px !important;
+  width: 96vw;
   height: 100vh;
   border-bottom: solid white;
-  scroll-margin-top: 45px;
+  scroll-margin-top: 45px !important;
   background-attachment: fixed;
   padding: 2vw;
-  overflow: hidden;
 }
 
 section:nth-of-type(1) {
@@ -205,7 +202,7 @@ section:nth-of-type(3) div a {
 }
 
 section:nth-of-type(3) div a img {
-  width: 100;
+  width: 80px;
   height: 80px;
 }
 
@@ -270,7 +267,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 99vw;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -286,11 +283,16 @@ footer p {
 }
 
 footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 50px 0px 50px 0px;
 }
 
 footer div a {
-  margin: 50px;
+  margin: 10px;
 }
 
 footer div a img {
@@ -328,7 +330,7 @@ footer div a img {
     width: 100vw;
     position: absolute;
     top: 70px;
-    right: -100vw;
+    right: -110vw;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -347,12 +349,21 @@ footer div a img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
   section:nth-of-type(2) .sou {
+    opacity: 1;
     width: 90vw;
+    height: auto;
   }
   section:nth-of-type(2) .sou2, section:nth-of-type(2) a {
     position: static;
+  }
+  section:nth-of-type(2) .sou2 {
+    opacity: 1;
+    margin-top: 20px;
+    width: 90vw;
+    height: auto;
   }
   section:nth-of-type(2) a {
     width: 70px;
@@ -360,6 +371,16 @@ footer div a img {
   }
   section:nth-of-type(3) {
     height: auto;
+  }
+  section:nth-of-type(3) div {
+    width: 80vw;
+  }
+  section:nth-of-type(3) div a {
+    margin: 10px;
+  }
+  section:nth-of-type(3) div a img {
+    width: 70px;
+    height: 60px;
   }
   section:nth-of-type(3) div p {
     display: none;

@@ -4,29 +4,35 @@ function scroll(){
     // mostra a posiçao da tela em px
     // document.querySelector(".mostra").innerHTML= window.scrollY
     
-    var sou= document.querySelector(".sou")
-    if (window.scrollY > 400){
-        sou.style.opacity= 1
-        sou.style.marginRight= "10px"
-    }else{
-        sou.style.opacity= 0
-        sou.style.marginRight= "100px"
-    }
+    // mostra a largura da janela
+    // document.querySelector(".mostra").innerHTML= window.innerWidth
 
-    var sou= document.querySelector(".sou2")
-    if (window.scrollY > 600){
-        sou.style.opacity= 1
-        sou.style.left= "5vw"
-    }else{
-        sou.style.opacity= 0
-        sou.style.left= "10vw"
-    }
+    if (window.innerWidth > 500){
 
-    var icones= document.querySelector(".icones")
-    if (window.scrollY > 1150){
-        icones.style.width= "60vw"
-    }else{
-        icones.style.width= "40vw"
+        var sou= document.querySelector(".sou")
+        if (window.scrollY > 400){
+            sou.style.opacity= 1
+            sou.style.marginRight= "10px"
+        }else{
+            sou.style.opacity= 0
+            sou.style.marginRight= "100px"
+        }
+    
+        var sou= document.querySelector(".sou2")
+        if (window.scrollY > 600){
+            sou.style.opacity= 1
+            sou.style.left= "5vw"
+        }else{
+            sou.style.opacity= 0
+            sou.style.left= "10vw"
+        }
+    
+        var icones= document.querySelector(".icones")
+        if (window.scrollY > 1150){
+            icones.style.width= "60vw"
+        }else{
+            icones.style.width= "40vw"
+        }
     }
 
     
@@ -49,7 +55,7 @@ function menu(){
         hambur.style.right= "0vw"
         foi = 1
     }else{
-        hambur.style.right= "-100vw"
+        hambur.style.right= "-110vw"
         foi = 0
     }
 }
