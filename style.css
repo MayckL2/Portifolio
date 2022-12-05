@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 93vw;
 }
 
 body {
@@ -29,10 +28,11 @@ header {
           justify-content: center;
   position: fixed;
   top: 0px;
-  width: 100vw;
+  width: 99vw;
   background-color: purple;
   border-bottom: solid white;
   z-index: 999;
+  overflow-x: hidden;
 }
 
 header img {
@@ -67,11 +67,13 @@ header ul li a:hover {
 
 section {
   width: 95vw;
+  margin: 0px !important;
   height: 100vh;
   border-bottom: solid white;
   scroll-margin-top: 45px;
   background-attachment: fixed;
   padding: 2vw;
+  overflow: hidden;
 }
 
 section:nth-of-type(1) {
@@ -108,48 +110,6 @@ section:nth-of-type(1) h1 {
 section:nth-of-type(1) h1:hover {
   text-shadow: 1px 1px 5px white;
   cursor: pointer;
-}
-
-section:nth-of-type(1) img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 50px;
-  -webkit-animation-name: seta;
-          animation-name: seta;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  position: absolute;
-  top: 75vh;
-  left: 40vw;
-}
-
-@-webkit-keyframes seta {
-  0% {
-    padding-top: 10px;
-  }
-  50% {
-    padding-top: 50px;
-  }
-  100% {
-    padding-top: 10px;
-  }
-}
-
-@keyframes seta {
-  0% {
-    padding-top: 10px;
-  }
-  50% {
-    padding-top: 50px;
-  }
-  100% {
-    padding-top: 10px;
-  }
 }
 
 section:nth-of-type(2) {
@@ -311,6 +271,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 99vw;
+  overflow: hidden;
 }
 
 footer h1 {
