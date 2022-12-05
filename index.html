@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayck Luciano Soares</title>
+    <link rel="icon" href="img/download.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onscroll="scroll()">
+    <header>
+        <ul id="hambur">
+            <li><a class="mostra" href="#">Home</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#hab">Habilidades</a></li>
+            <li><a href="#cont">Contatos</a></li>
+        </ul>
+        <img src="img/menu-hamburguer.png" alt="menu" onclick="menu()">
+    </header>
+
+    <section>
+        <h1>Olá, bem vindo ao meu portifólio</h1>
+        <h1>Veja mais sobre mim abaixo</h1>
+    </section>
+
+    <section id="sobre">
+        <h1 class="sou">Sou um desenvolvidor Front-End, estudo Front-End ha 2 anos por conta propria. Atualmente estou cursando tecnico de desenvolvimento de sitemas na instituição Senai, 1° semestre.</h1>
+    
+        <h1 class="sou2">Descubra mais do meu trabalho no meu linkedin e github</h1>
+        <a href="#cont">Veja mais</a>
+    </section>
+
+    <section id="hab" onmousemove="back(event)">
+        <h1>Habilidades</h1>
+        <div class="icones">
+            <a href=""><img src="img/html-5.png" alt=""></a>
+                <p>HTML5 <br> Hyper Text Markup Language <br> Linguagem de Marcação de HiperTexto</p>
+            <a href=""><img src="img/css-3.png" alt=""></a>
+                <p>CSS3 <br> Cascading Style Sheet <br> Folha de Estilo em Cascatas</p>
+            <a href=""><img src="img/sass.png" alt=""></a>
+                <p>SASS <br> Syntactically Awesome Style Sheets <br> folhas de estilo com uma sintaxe incrível</p>
+            <a href=""><img src="img/bootstrap.png" alt=""></a>
+                <p>BOOTSTRAP <br>é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.</p>
+            <a href=""><img src="img/js.png" alt=""></a>
+                <p>JavaScript <br> é uma linguagem de programação que permite a você implementar itens complexos em páginas web</p>
+            <a href=""><img src="img/jquery.png" alt=""></a>
+                <p>JQUERY <br> é uma biblioteca JavaScript criada por John Resig em 2006</p>
+        </div>
+    </section>
+
+    <footer id="cont">
+        <h1>Contatos</h1>
+        <div>
+            <a href="https://github.com/MayckL2" target="_blank"><img src="img/github-sign.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/mayck-luciano-993403171" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            <a href="https://www.workana.com/freelancer/9d43ccad6407beae6e807dc78f88818b" target="_blank"><img src="img/Logo_Workana.png" alt=""></a>
+        </div>      
+        <p>&copy; Mayck L - 2022</p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
