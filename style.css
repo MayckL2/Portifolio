@@ -32,7 +32,6 @@ header {
   background-color: purple;
   border-bottom: solid white;
   z-index: 999;
-  overflow-x: hidden;
 }
 
 header img {
